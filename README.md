@@ -79,4 +79,8 @@ transaction data on GitHub.
 
 ## Author
 
-Student Data Science Project
+**Vinayak Shinde**  
+BSc Data Science Student  
+Indira College of Commerce and Science
+
+GitHub: [Vinayak-080806](https://github.com/Vinayak-080806)
