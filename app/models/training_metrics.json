@@ -1,0 +1,7 @@
+{
+  "rows": 284807,
+  "features": 30,
+  "fraud_cases": 492,
+  "roc_auc": 0.9720834996210077,
+  "average_precision": 0.7189705771419241
+}

@@ -1,0 +1,18 @@
+CREDIT CARD FRAUD DETECTION PROJECT
+
+1. Read README.md for project information.
+2. Install dependencies using:
+   pip install -r requirements.txt
+
+3. Train the model using:
+   python scripts/train_model.py
+
+4. Start the API using:
+   uvicorn app.main:app --reload
+
+5. Start the frontend using:
+   streamlit run frontend/streamlit_app.py
+
+IMPORTANT:
+Make sure the dataset is available before training.
+Do not upload confidential information or real cardholder data.
