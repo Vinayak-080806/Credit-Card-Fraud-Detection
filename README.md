@@ -1,31 +1,61 @@
-# Credit Card Fraud Detection
+# Credit Card Fraud Detection Using Machine Learning
 
-A machine-learning project for detecting potentially fraudulent
-credit-card transactions using Logistic Regression.
+## Project Overview
+This project uses machine learning to identify potentially fraudulent credit card transactions. It analyzes transaction data and predicts whether a transaction is legitimate or potentially fraudulent.
 
-## Features
+## Objectives
+- Detect fraudulent credit card transactions.
+- Apply machine learning to an imbalanced dataset.
+- Evaluate model performance using appropriate metrics.
+- Explore the trade-off between precision and recall.
+- Present predictions through an application interface.
 
-- Logistic Regression model
-- Class-imbalance handling
-- Model evaluation metrics
-- FastAPI prediction API
-- Streamlit web interface
-- SQLite prediction history
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- SQLite
+- Jupyter Notebook
+
+## Dataset
+The project uses a credit card transaction dataset containing 284,807 transactions, including 492 fraudulent transactions.
+
+The dataset is highly imbalanced, so accuracy alone is not sufficient for evaluating the model.
+
+The dataset file is not included in this public repository. Obtain it from an authorized source and follow the instructions in the project files.
+
+## Model Evaluation
+The recorded model evaluation includes:
+
+- ROC-AUC: approximately 0.9721
+- Average Precision: approximately 0.7190
+- Fraud detection recall at a 0.5 threshold: approximately 91.8%
+
+These are previously recorded evaluation results. Performance can vary with the training process, dataset split, and decision threshold.
+
+## Visualizations
+The project analysis includes:
+- Class distribution of legitimate and fraudulent transactions.
+- Confusion matrix.
+- Precision and recall across decision thresholds.
+- Model evaluation metrics.
 
 ## Project Structure
 
-- app/: API, database, and machine-learning modules
-- data/: Local dataset
-- frontend/: Streamlit application
-- notebooks/: Training notebook
-- scripts/: Model training and dataset helper scripts
-- tests/: Test files
+```text
+Credit-Card-Fraud-Detection/
+├── app/
+├── frontend/
+├── notebooks/
+├── scripts/
+├── tests/
+├── .env.example
+├── .gitignore
+├── requirements.txt
+└── README.md
 
-## Requirements
-
-- Python
-- pip
-- Credit-card fraud dataset
 
 ## Installation
 
@@ -33,14 +63,6 @@ Install the required dependencies:
 
     pip install -r requirements.txt
 
-## Dataset
-
-Place the dataset at:
-
-    data/creditcard.csv
-
-Obtain the dataset from an authorised source and check its licence.
-The dataset is not included in this repository.
 
 ## Train the Model
 
