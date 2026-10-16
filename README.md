@@ -1,14 +1,15 @@
 # Credit Card Fraud Detection Using Machine Learning
 
 ## Project Overview
-This project uses machine learning to identify potentially fraudulent credit card transactions. It analyzes transaction data and predicts whether a transaction is legitimate or potentially fraudulent.
+Credit Card Fraud Detection is a machine learning project developed to identify potentially fraudulent credit card transactions. The project uses data science and machine learning techniques to analyse transaction data and distinguish between legitimate and potentially fraudulent transactions.
 
 ## Objectives
-- Detect fraudulent credit card transactions.
-- Apply machine learning to an imbalanced dataset.
-- Evaluate model performance using appropriate metrics.
-- Explore the trade-off between precision and recall.
-- Present predictions through an application interface.
+- Analyse credit card transaction data.
+- Perform data preprocessing and analysis.
+- Train a machine learning model.
+- Identify potentially fraudulent transactions.
+- Evaluate model performance.
+- Understand the application of machine learning in financial security.
 
 ## Technologies Used
 - Python
@@ -16,93 +17,76 @@ This project uses machine learning to identify potentially fraudulent credit car
 - NumPy
 - Scikit-learn
 - Streamlit
-- SQLite
 - Jupyter Notebook
+- Google Colab
 
 ## Dataset
-The project uses a credit card transaction dataset containing 284,807 transactions, including 492 fraudulent transactions.
+The project uses a credit card transaction dataset containing transaction features and class labels.
 
-The dataset is highly imbalanced, so accuracy alone is not sufficient for evaluating the model.
+The dataset is highly imbalanced, with legitimate transactions significantly outnumbering fraudulent transactions.
 
-The dataset file is not included in this public repository. Obtain it from an authorized source and follow the instructions in the project files.
+## Project Workflow
+1. Data Collection
+2. Data Preprocessing
+3. Exploratory Data Analysis
+4. Model Training
+5. Model Evaluation
+6. Fraud Prediction
+7. Application Development
 
-## Model Evaluation
-The recorded model evaluation includes:
+## Machine Learning Model
+A machine learning classification model is used to predict whether a transaction may be fraudulent.
 
-- ROC-AUC: approximately 0.9721
-- Average Precision: approximately 0.7190
-- Fraud detection recall at a 0.5 threshold: approximately 91.8%
+Model performance can be evaluated using:
+- Precision
+- Recall
+- F1-Score
+- ROC-AUC
+- Confusion Matrix
 
-These are previously recorded evaluation results. Performance can vary with the training process, dataset split, and decision threshold.
-
-## Visualizations
-The project analysis includes:
-- Class distribution of legitimate and fraudulent transactions.
-- Confusion matrix.
-- Precision and recall across decision thresholds.
-- Model evaluation metrics.
+## Project Features
+- Credit card transaction analysis
+- Machine learning-based fraud detection
+- Model training and evaluation
+- Fraud prediction
+- Interactive application interface
 
 ## Project Structure
-
-```text
-Credit-Card-Fraud-Detection/
-├── app/
-├── frontend/
-├── notebooks/
-├── scripts/
-├── tests/
-├── .env.example
-├── .gitignore
-├── requirements.txt
-└── README.md
-
-
-## Installation
-
-Install the required dependencies:
-
-    pip install -r requirements.txt
-
-
-## Train the Model
-
-Run this command from the project root:
-
-    python scripts/train_model.py
-
-## Start the API
-
-Run:
-
-    uvicorn app.main:app --reload
-
-## Start the Frontend
-
-Open another terminal and run:
-
-    streamlit run frontend/streamlit_app.py
-
-## Evaluation
-
-Evaluate the model using precision, recall, F1-score, ROC-AUC,
-average precision, and a confusion matrix.
-
-Accuracy alone is insufficient for an imbalanced fraud dataset.
+- `app/` – Application modules
+- `frontend/` – User interface
+- `scripts/` – Data preparation and model training scripts
+- `notebooks/` – Jupyter Notebook files
+- `tests/` – Test-related files
+- `requirements.txt` – Python dependencies
+- `README.md` – Project documentation
 
 ## Limitations
+- The dataset contains very few fraudulent transactions compared with legitimate transactions.
+- The model may generate false-positive predictions.
+- Some fraudulent transactions may remain undetected.
+- The project is intended for educational purposes and is not a production-ready financial fraud detection system.
 
-This is an educational project, not a production banking security
-system. Predictions may be incorrect.
+## Future Scope
+- Improve model performance.
+- Experiment with different machine learning algorithms.
+- Improve fraud detection precision and recall.
+- Add more data visualisations.
+- Improve application functionality.
+- Perform additional testing.
 
-## Privacy
-
-Do not publish confidential information, credentials, or private
-transaction data on GitHub.
+## Learning Outcomes
+This project provides practical learning in Python programming, data preprocessing, machine learning, model evaluation, and application development.
 
 ## Author
 
-**Vinayak Shinde**  
-BSc Data Science Student  
-Indira College of Commerce and Science
+**Vinayak Shinde**
 
-GitHub: [Vinayak-080806](https://github.com/Vinayak-080806)
+BSc Data Science Student  
+Indira College of Commerce and Science  
+Pimpri-Chinchwad, Maharashtra, India
+
+## Acknowledgements
+I would like to acknowledge the open-source Python community and the developers of the machine learning and data analysis libraries used in this project.
+
+## Disclaimer
+This project is developed for academic and educational purposes only. Its predictions should not be used as the sole basis for real-world financial decisions.
